@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Tech Stacks
+-ReactJS
+-<a href"https://www.syncfusion.com/> Syncfusion </a>
+-<a href"https://www.syncfusion.com/> TailwindCSS </a>
+
+
 ## Available Scripts
 
 In the project directory, you can run:
