@@ -23,7 +23,7 @@ export const ContextProvider = ({ children }) => {
     const setMode = (e) => {
         setCurrentMode(e.target.value);
 
-        // saves and activate theme for the next time 
+        // saves and activates theme for the next time 
         localStorage.setItem('themeMode', e.target.value);
         setThemeSettings(false);
     }
