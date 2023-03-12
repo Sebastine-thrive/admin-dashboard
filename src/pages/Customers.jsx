@@ -6,7 +6,7 @@ import { Header } from '../components';
 
 const Customers = () => {
   return (
-    <div className='m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl dark:bg-secondary-dark-bg'>
+    <div className='my-2 ml-2 mr-6 md:m-10 p-2 md:p-10 bg-white rounded-3xl dark:bg-secondary-dark-bg'>
       <Header title='Customers'
         category='Page' />
       <GridComponent
@@ -17,10 +17,15 @@ const Customers = () => {
         toolbar={['Delete']}
         editSettings={{ allowDeleting: true, allowEditing: true }}
         width='auto'
-      >
+        autoFit
+        >
         <ColumnsDirective>
           {customersGrid.map((item, index) => (
-            <ColumnDirective key={index} {...item} />
+            <ColumnDirective key={index} {...item} 
+              minWidth='200px' textAlign='Center' autoFit
+
+
+            />
           ))}
         </ColumnsDirective>
         <Inject services={[Page, Toolbar, Selection, Edit, Sort, Filter]} />

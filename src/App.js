@@ -17,14 +17,14 @@ const App = () => {
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg'>
-          <div className='fixed right-4 bottom-4' style={{ zindex: '1000' }} >
+          <div className='fixed right-4 bottom-4 z-[1000]'>
             <TooltipComponent
               content='settings'
               position='Top'
             >
               <button
                 type='button'
-                className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
+                className='text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white '
                 style={{ background: currentColor, borderRadius: '50%' }}
                 onClick={() => setThemeSettings(true)}
               >
@@ -34,7 +34,7 @@ const App = () => {
 
           </div>
           {activeMenu ? (
-            <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
+            <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white z-[2]'>
               <Sidebar />
             </div>
           ) : (
