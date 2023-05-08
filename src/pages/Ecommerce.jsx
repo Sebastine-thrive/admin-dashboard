@@ -1,8 +1,8 @@
 import React from 'react';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-import { Stacked, Button, SparkLine } from '../components';
-import { earningData, SparklineAreaData } from '../data/dummy';
+import { Stacked, Button } from '../components';
+import { earningData } from '../data/dummy';
 
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -15,22 +15,16 @@ const Ecommerce = () => {
         <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-76 rounded-xl w-full lg:w-full p-8 pt-6 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center'
         >
 
-          <div className='flex flex-wrap justify-between items-center'>
-            <div className='text-white mb-16'>
-              <p className='font-bold bg-gray-500'> Earnings</p>
-              <p className='text-2xl bg-gray-500'>$65,450.12</p>
+          <div className='flex flex-wrap items-center'>
+            <div className='text-white items-center px-2 mb-16 ' style={{ backgroundColor: currentColor}}> 
+              <p 
+              className='font-bold'
+              > Earnings</p>
+              <p className='text-2xl'>$65,450.12</p>
             </div>
           </div>
 
-          <div className='flex mt-20'>
-            <Button
-              color='white'
-              bgColor={currentColor}
-              text='Download'
-              borderRadius='10px'
-              size='lg'
-            />
-          </div>
+        
         </div>
 
         <div className='flex m-3 flex-wrap justify-center gap-1 items-center'>
